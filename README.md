@@ -1,18 +1,17 @@
-# The "SickGame" 
+<a name="readme-top"></a>
 
+# The "SickGame"
 The "SickGame" is a web quiz game with image/video questions support. The description may change due to early 
 development stage. Project status: on-going.
 
 <p align="right"><a href="#readme-top">[back to top]</a></p>
 
-## Major Languages, Libraries of Frameworks Used
-
+## Major Languages, Libraries and Frameworks Used
 [![Kotlin][KotlinLang.org]][Kotlin-url] [![Spring][Spring.io]][Spring-url]
 [![TypeScript][TypeScriptLang.org]][TypeScript-url] [![Angular][Angular.io]][Angular-url]
 <p align="right"><a href="#readme-top">[back to top]</a></p>
 
 ## Roadmap
-
 - [ ] Spring Backend
   - [ ] temp file storage 
   - [ ] rounds gameplay
@@ -56,7 +55,6 @@ for the next 3 hours!
 <p align="right"><a href="#readme-top">[back to top]</a></p>
 
 ## Contact Me
-
 - LinkedIn -> [Anton Gorokh](https://www.linkedin.com/in/anton-gorokh-4b0752231)
 - Mail -> [rerearitet@gmail.com](https://mail.google.com/mail/u/0/?fs=1&to=rerearitet@gmail.com&tf=cm)
 <p align="right"><a href="#readme-top">[back to top]</a></p>
