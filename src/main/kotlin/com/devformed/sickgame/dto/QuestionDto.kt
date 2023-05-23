@@ -1,11 +1,18 @@
 package com.devformed.sickgame.dto
 
-abstract class QuestionDto(val resourceType: ResourceType, val content: String)
+abstract class QuestionDto {
+    abstract val resourceType: ResourceType
+    abstract val content: String
+}
 
-class TextQuestionDto(content: String) : QuestionDto(ResourceType.TEXT, content)
-class ImageQuestionDto(path: String) : QuestionDto(ResourceType.IMAGE, path)
-class VideoQuestionDto(path: String) : QuestionDto(ResourceType.VIDEO, path)
+data class TextQuestionDto(override val content: String) : QuestionDto() {
+    override val resourceType: ResourceType = ResourceType.TEXT
+}
 
-enum class ResourceType {
-    TEXT, IMAGE, VIDEO
+data class ImageQuestionDto(override val content: String) : QuestionDto() {
+    override val resourceType: ResourceType = ResourceType.IMAGE
+}
+
+data class VideoQuestionDto(override val content: String) : QuestionDto() {
+    override val resourceType: ResourceType = ResourceType.VIDEO
 }
