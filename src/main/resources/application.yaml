@@ -1,0 +1,3 @@
+com.devformed.sickgame.file-storage.local:
+  baseDirectoryPath: /var/storage/sickgame/userUpload/
+  tempDirectoryPath: temp/
