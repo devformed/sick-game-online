@@ -1,0 +1,3 @@
+com.devformed.sickgame.file-storage.local:
+  baseDirectoryPath: ./target/test-classes/file_storage/
+  tempDirectoryPath: temp/
