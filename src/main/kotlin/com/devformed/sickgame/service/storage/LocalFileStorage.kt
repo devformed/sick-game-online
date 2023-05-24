@@ -17,7 +17,7 @@ import java.util.UUID
 @Component
 class LocalFileStorage @Autowired constructor(private val properties: LocalFileStorageProperties) : FileStorage {
 
-	val log: Logger = LoggerFactory.getLogger(this::class.java)
+	private val log: Logger = LoggerFactory.getLogger(this::class.java)
 
 	override fun uploadTempFileContent(fileContent: ByteArray, fileExtension: String?): String? {
 		var fileName = UUID.randomUUID().toString()
