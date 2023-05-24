@@ -15,6 +15,8 @@
 	<properties>
 		<java.version>17</java.version>
 		<kotlin.version>1.8.21</kotlin.version>
+
+		<commmons-lang3.version>3.12.0</commmons-lang3.version>
 	</properties>
 
 	<dependencies>
@@ -30,6 +32,12 @@
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-stdlib</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commmons-lang3.version}</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
