@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet author="agorokh" id="1685037579661-1">
+        <createSequence sequenceName="lobby_id_seq_" startValue="1" incrementBy="1"/>
+    </changeSet>
+    <changeSet author="agorokh" id="1685037579661-2">
+        <createTable tableName="lobby_">
+            <column name="id_" type="bigint" autoIncrement="false" defaultValueSequenceNext="lobby_id_seq_">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name_" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="max_players_" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password_" type="varchar(60)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="agorokh" id="1685037579661-3">
+        <createSequence sequenceName="lobby_pack_id_seq_" startValue="1" incrementBy="1"/>
+    </changeSet>
+    <changeSet author="agorokh" id="1685037579661-4">
+        <createTable tableName="lobby_pack_">
+            <column name="id_" type="bigint" autoIncrement="false" defaultValueSequenceNext="lobby_pack_id_seq_">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="created_at_" type="timestamp without time zone">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at_" type="timestamp without time zone">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lobby_id_" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="temp_file_path_" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pack_type_" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="agorokh" id="1685037579661-5">
+        <addForeignKeyConstraint baseTableName="lobby_pack_" baseColumnNames="lobby_id_"
+                                 referencedTableName="lobby_" referencedColumnNames="id_" constraintName="fk_lobby_pack__lobby_id_"/>
+    </changeSet>
+</databaseChangeLog>
