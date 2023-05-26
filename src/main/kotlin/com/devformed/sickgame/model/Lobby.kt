@@ -5,7 +5,6 @@ import jakarta.persistence.Entity
 import jakarta.persistence.OneToMany
 import jakarta.persistence.Table
 import jakarta.validation.constraints.Size
-import kotlin.math.min
 
 /**
  * @author Anton Gorokh

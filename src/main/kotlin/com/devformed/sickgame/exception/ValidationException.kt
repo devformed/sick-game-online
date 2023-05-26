@@ -10,7 +10,5 @@ import java.util.Locale
 class ValidationException(val errors: Collection<I18nToken>, val locale: Locale) : RuntimeException() {
 
 	constructor(errors: Collection<I18nToken>) : this(errors, Constants.defaultLocale)
-	constructor(error: I18nToken) : this(listOf(error), Constants.defaultLocale)
-	constructor(errorKey: String) : this(listOf(I18nToken(errorKey)), Constants.defaultLocale)
 }
 

@@ -125,6 +125,7 @@
 							<goal>compile</goal>
 						</goals>
 						<configuration>
+							<jvmTarget>${java.version}</jvmTarget>
 							<sourceDirs>
 								<sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
 							</sourceDirs>
@@ -132,7 +133,6 @@
 					</execution>
 				</executions>
 				<configuration>
-					<jvmTarget>${java.version}</jvmTarget>
 					<args>
 						<arg>-Xjsr305=strict</arg>
 					</args>

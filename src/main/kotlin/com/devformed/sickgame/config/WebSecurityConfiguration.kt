@@ -15,7 +15,7 @@ class WebSecurityConfiguration {
 
 	@Bean
 	fun securityFilterChain(http: HttpSecurity): SecurityFilterChain {
-		http.authorizeHttpRequests { authorizeRequests ->
+		http.csrf().disable().authorizeHttpRequests { authorizeRequests ->
 			authorizeRequests
 				.anyRequest().permitAll()
 		}

@@ -19,6 +19,6 @@ class RestResponseEntityExceptionHandler : ResponseEntityExceptionHandler() {
 		val translatedErrors = sequenceOf(*ex.errors.toTypedArray())
 			.map { it.translate(ex.locale) }
 			.toList<String>()
-		return handleExceptionInternal(ex, translatedErrors.joinToString(", "), HttpHeaders(), HttpStatus.BAD_REQUEST, request)
+		return ResponseEntity<Any>(translatedErrors.joinToString(", "), HttpHeaders(), HttpStatus.BAD_REQUEST)
 	}
 }
