@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="VALIDATION_ERROR.LOBBY.INVALID_PLAYERS_COUNT">Неправильное количество игроков. Выберите од 2 до 6 игроков для игры</entry>
+</properties>
