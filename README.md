@@ -14,6 +14,7 @@ development stage. Project status: on-going.
 ## Roadmap
 - [ ] Spring Backend
   - [x] temp file storage 
+  - [x] i18n localization
   - [ ] rounds gameplay
   - [ ] questions importing
   - [ ] scoreboard
